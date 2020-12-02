@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Lane</title>        
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid overflow-auto" style="height: 500px; width: 400px; background-color: #0f3460;">                    
+      <h3 class="p-1 font-weight-bold text-white greetings" style="cursor: pointer" data-toggle="modal" data-target="#exampleModal">Hello, 
+        <span id="username"></span>
+        <span class="edit-text">&#x270E;</span>
+      </h3>               
+      <div id="bugProgress"></div>
+      <input type="text" class="form-control" placeholder="Add description and press enter" aria-label="description" aria-describedby="addon-wrapping" id="descriptionInput">
+        
+      <div id="bugList" style="margin-top: 1.5rem;">  <!-- bugs nodes appended here -->  </div>        
+
+       <!-- Name Modal -->
+      <div class="modal fade" tabindex="-1" id="exampleModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Edit your name</h5>
+              <button type="button" class="close" style="margin-top: -20px;" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" placeholder="username" aria-label="username" aria-describedby="addon-wrapping" id="usernameInput">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" id="clearAccount" data-dismiss="modal">Clear Account</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="saveUsername" data-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bug Modal -->
+      <div class="modal fade " tabindex="-1" id="notesModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Notes</h5>
+              <button type="button" class="close" style="margin-top: -20px;" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <input type="text" class="form-control mb-2" placeholder="note" aria-label="notes" aria-describedby="addon-wrapping" id="notesInput">
+              <!-- Bug Notes List -->
+              <div id='noteList'>
+                <!-- notes nodes appended here -->
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="saveNote">Save Note</button>
+            </div>
+          </div>
+        </div>
+      </div>                        
+    </div>                   
+    <script src="js/main-item-utils.js"></script>
+    <script src="js/luxon.min.js"></script>    
+    <script src="js/uuidv4.min.js"></script>     
+    <script src="js/progressbar.js"></script> 
+    <script src="js/background.js"></script>
+    <script src="js/script.js"></script>    
+</body>
+</html>
