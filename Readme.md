@@ -4,6 +4,8 @@
 Bug Lane is a browser extension, cross-browser support, offline-app compatible,
 Native-powered tool.
 
+![bug-lane-image](https://github.com/imprakashraghu/bug-lane-extension/blob/main/bug-lane.jpg?raw=true)
+
 ## Features
 
 - Add bugs or issuses facing in any instance of your browser while your developing
