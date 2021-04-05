@@ -1,0 +1,23 @@
+# Bug Lane - Chrome Extension
+## A Productivity Tool
+
+Bug Lane is a browser extension, cross-browser support, offline-app compatible,
+Native-powered tool.
+
+## Features
+
+- Add bugs or issuses facing in any instance of your browser while your developing
+- Add Notes to your bugs for future solving
+- Complete your bugs and keep a track of it
+- Dark mode for the tool enhances the experience
+- Add urls to the notes or issuses which is interactable
+
+## Open Source
+
+This is an open soure extension tool, feel free to submit your thoughts and works to this repository.
+
+## License
+
+MIT
+
+**Free Software, Hell Yeah!**
