@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Bug Lane",
     "description": "Used to track bugs, add helper notes to bugs and be more productive",
-    "version": "0.0.1",   
+    "version": "0.0.2",   
     "icons": { "16": "public/icon.png",
         "48": "public/icon.png",
        "128": "public/icon.png" },
