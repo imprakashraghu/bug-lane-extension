@@ -6,11 +6,10 @@ chrome.runtime.onInstalled.addListener(function(details){
         setBugOuterProgress(0);
       });
     }
+    chrome.storage.sync.get(['bugs'], (result) => {
+        setBugOuterProgress(result.bugs);
+    })
 });
-
-chrome.storage.sync.get(['bugs'], (result) => {
-    setBugOuterProgress(result.bugs);
-})
 
 function setBugOuterProgress(bugs) {    
         if(bugs && bugs.length) {        
@@ -20,8 +19,8 @@ function setBugOuterProgress(bugs) {
             if(badgeText > 9)        {
                 badgeText = '9+';
             }
-            chrome.browserAction.setBadgeText({text: badgeText.toString()});   
+            chrome.action.setBadgeText({text: badgeText.toString()});   
         } else {
-            chrome.browserAction.setBadgeText({text: '0'});   
+            chrome.action.setBadgeText({text: '0'});   
         }    
 }
