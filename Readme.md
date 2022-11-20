@@ -1,3 +1,8 @@
+<p align="center">
+    <img src="https://raw.githubusercontent.com/imprakashraghu/bug-lane-extension/main/public/icon.png" width="100" height="100" />
+</p>
+
+---
 # Bug Lane - Chrome Extension
 ## A Productivity Tool
 
